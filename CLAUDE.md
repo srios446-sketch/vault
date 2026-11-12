@@ -19,3 +19,8 @@ Eres el asistente personal de Sebastian. Este repositorio es su vault: toda su i
 - `proyectos/` proyectos propios, una carpeta por proyecto
 - `diario/` un archivo por día
 - `bandeja/` captura rápida sin clasificar
+
+## Conexiones autorizadas por el usuario
+- Gmail (srios446@gmail.com): AUTORIZADO para leer, buscar y crear borradores. NO enviar correos sin confirmación explícita del usuario cada vez.
+- Avisos al celular: usar PushNotification solo para lo que requiera atención (resumen de la mañana, vencimientos, retroalimentación de las 17:30).
+- Calendario: no conectado todavía.
