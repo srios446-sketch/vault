@@ -1,9 +1,11 @@
-# Proceso: pedido a proveedor (HIPÓTESIS, por confirmar)
+# Proceso: pedido a proveedor
 1. Solicitud recibida por correo
 2. Cotizar o confirmar precio con proveedor
-3. Emitir orden de compra (pendiente saber quién la aprueba)
-4. Seguimiento de entrega (insistir por el mismo medio si no responde)
-5. Recepción
-6. Actualizar inventario
+3. Pedir autorización de OTRA ÁREA (confirmado 2026-11-12) -> esperar aprobación
+4. Emitir orden de compra (solo con la aprobación)
+5. Seguimiento de entrega (insistir por el mismo medio si no responde)
+6. Recepción
+7. Actualizar inventario
 
-Regla: al terminar un paso, crear la tarea del siguiente.
+Reglas: al terminar un paso, crear la tarea del siguiente. El paso 3 es una espera: registrar "esperando a" (el área aprobadora) con fecha de seguimiento.
+Por aprender: qué área exacta aprueba y por qué medio se le pide.
