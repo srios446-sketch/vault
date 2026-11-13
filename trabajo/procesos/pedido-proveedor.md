@@ -9,3 +9,8 @@
 
 Reglas: al terminar un paso, crear la tarea del siguiente. El paso 3 es una espera: registrar "esperando a" (el área aprobadora) con fecha de seguimiento.
 Por aprender: qué área exacta aprueba y por qué medio se le pide.
+
+## Observado 2026-11-13
+- "Bentonita Playa del Carmen": el usuario ESPERA una orden de compra de otro departamento.
+  Es decir, en algunos casos la OC no la emite él: la emite/autoriza otra área y él espera a que llegue para continuar.
+  Falta confirmar qué departamento.
