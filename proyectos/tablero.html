@@ -464,11 +464,16 @@ li.exp .caret { transform: rotate(90deg); }
 
     var fi = el('input'); fi.type = 'date'; fi.value = t.followUp || '';
     fi.setAttribute('aria-label', 'Fecha de seguimiento'); track(fi, 'fu:' + t.id);
-    fi.addEventListener('change', function () {
-      var v = fi.value; if (v === (t.followUp || '')) return;
+    function saveFu() {
+      var v = fi.value;
+      // El campo de fecha avisa de cada parte que se escribe: solo guardamos una fecha completa y sensata.
+      if (v && !(/^\d{4}-\d{2}-\d{2}$/.test(v) && v >= '2020-01-01' && v <= '2100-12-31')) return;
+      if (v === (t.followUp || '')) return;
       delete drafts['fu:' + t.id];
       patch(t, { followUp: v }, v ? 'Seguimiento programado para ' + shortDate(v) : 'Seguimiento quitado');
-    });
+    }
+    fi.addEventListener('change', function () { clearTimeout(fi._t); fi._t = setTimeout(saveFu, 900); });
+    fi.addEventListener('blur', function () { clearTimeout(fi._t); saveFu(); });
     var fw = el('div'); fw.appendChild(fi);
     if (isLate(t)) fw.appendChild(el('div', 'fv late', 'Venció el ' + shortDate(t.followUp)));
     field('Revisar el', fw);
