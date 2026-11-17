@@ -14,10 +14,9 @@ Este es el camino en el que la OC NO la emite él.
 - El paso 6 NO puede empezar hasta que llegue ese correo.
 - Al llegar el aviso de Adriana, el asistente debe crear sola la tarea de seguimiento de entrega.
 
-## Esto explica la bentonita
-"Bentonita Playa del Carmen" dice "Esperando Orden de Compra del Dpto de...".
-Muy probablemente ese departamento es **Compras** y la persona es **Adriana Ortega**.
-CONFIRMAR con el usuario antes de darlo por hecho.
+## Bentonita: CONFIRMADO (2026-11-17)
+"Bentonita Playa del Carmen" espera la OC de **Adriana Ortega, de Compras**.
+Es el mismo proceso de requisicion. Ya quedo marcada asi en el tablero.
 
 ## Los dos caminos de compra, ahora más claros
 | | Flujo interno (filtros MADISA) | Requisición a Compras (baterías, bentonita) |
@@ -26,7 +25,13 @@ CONFIRMAR con el usuario antes de darlo por hecho.
 | Qué dispara el siguiente paso | Generar factura y OC | El correo de Adriana avisando |
 | Paso final | Flujo de pago la semana siguiente | Proceso de entrega |
 
-Falta saber QUÉ determina que una compra vaya por un camino o por el otro.
+## QUÉ DETERMINA EL CAMINO: EL MONTO (confirmado 2026-11-17)
+Una compra va por **flujo interno** (ellos generan factura y OC) o por **requisición a Compras**
+(Adriana Ortega coloca la OC) **según el monto**.
+FALTA SABER: cuál es el monto límite y quién lo fija. Preguntarlo cuando aparezca una compra nueva.
+
+Regla para el asistente: al registrar una compra, preguntar el monto si no se sabe.
+Con el monto se sabe qué camino sigue y, por lo tanto, qué tarea crear después.
 
 ## Requisiciones abiertas del 2026-11-17 (mismo proceso, distintas obras)
 - PD18
