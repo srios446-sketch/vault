@@ -14,7 +14,7 @@ Una ruta para motos y vehículos todo terreno que sea divertida y tenga buenas v
 - Circuito de 20.2 km. Sale en 25.55015, -103.72577, al norte de Juan E. García.
 - Altitud de 1,193 a 1,267 m. Desnivel acumulado de unos 100 m. Pendiente menor a 3%.
 - Queda a unos 22.5 km del centro del sitio Ramsar 1747.
-- Archivos en `datos/`: ruta.gpx, ruta.kml, ruta.geojson y los mapas.
+- Archivos en `datos/`: ruta.kmz (Google Earth, con kilometraje e imagen satelital), ruta.gpx, ruta.kml, ruta.geojson y los mapas.
 - Scripts en `scripts/`: layers → route → outputs → figs → pdf. Los insumos se descargan de AWS Open Data: Copernicus DEM y Sentinel-2 L2A, escena 13RFJ del 2026-11-14.
 
 ## Hallazgos clave
